@@ -8,11 +8,18 @@
 	<link href="<?php echo BASE_URL;  ?>/assets/css/style.css" rel="stylesheet">
 </head>
 <body>
+
 	<div class="container">
 		<div class="row">
-			<h1>Topo</h1>
-			<?php $this->loadViewInTemplate($viewName, $viewData); ?>
-			<h1>Rodapé</h1>
+			<section id="header">
+				header
+			</section>
+			<section id="body">
+				<?php $this->loadViewInTemplate($viewName, $viewData); ?>
+			</section>
+			<section id="footer">
+				footer
+			</section>
 		</div>
 	</div>
 
