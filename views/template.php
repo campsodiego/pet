@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Template</title>
-	<link rel="stylesheet" href="">
+	<link href="<?php echo BASE_URL;  ?>/assets/css/style.css" rel="stylesheet">
 </head>
 <body>
 	<h1>Topo</h1>
