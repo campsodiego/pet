@@ -1,7 +1,7 @@
 <?php 
 	require 'config.php';
 
-	define("BASE_URL", "http://localhost/pet")
+	define("BASE_URL", "http://localhost/pet");
 	
 	spl_autoload_register(function($class){
 		if (strpos($class, 'Controller') > -1) {
