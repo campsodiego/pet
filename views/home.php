@@ -41,14 +41,39 @@
 		</a>
 	</div>
 </section>
+<div class="col-md-4 col-lg-4">
+	<h1>Home</h1>
 
-<h1>Home</h1>
+	<?php foreach ($anuncios as $anuncio) {
+		echo "Cod: ".$anuncio['idanuncios']."<br/>";
+		echo "Titulo: ".$anuncio['tituloAnuncio']."<br/>";
+		echo "Quantidade: ".$anuncio['qtdAnuncio']."<br/>";
+		echo "Valor: ".$anuncio['vlrAnuncio']."<br/>";
+		echo "Descricao: ".$anuncio['descricaoAnuncio']."<br/>";
+		echo "Imagem: ".$anuncio['imagem']."<br/>";
+	} ?>
+</div>
+<div class="col-md-4 col-lg-4">
+	<h1>Home</h1>
 
-<?php foreach ($anuncios as $anuncio) {
-	echo "Cod: ".$anuncio['idanuncios']."<br/>";
-	echo "Titulo: ".$anuncio['tituloAnuncio']."<br/>";
-	echo "Quantidade: ".$anuncio['qtdAnuncio']."<br/>";
-	echo "Valor: ".$anuncio['vlrAnuncio']."<br/>";
-	echo "Descricao: ".$anuncio['descricaoAnuncio']."<br/>";
-	echo "Imagem: ".$anuncio['imagem']."<br/>";
-} ?>
+	<?php foreach ($anuncios as $anuncio) {
+		echo "Cod: ".$anuncio['idanuncios']."<br/>";
+		echo "Titulo: ".$anuncio['tituloAnuncio']."<br/>";
+		echo "Quantidade: ".$anuncio['qtdAnuncio']."<br/>";
+		echo "Valor: ".$anuncio['vlrAnuncio']."<br/>";
+		echo "Descricao: ".$anuncio['descricaoAnuncio']."<br/>";
+		echo "Imagem: ".$anuncio['imagem']."<br/>";
+	} ?>
+</div>
+<div class="col-md-4 col-lg-4">
+	<h1>Home</h1>
+
+	<?php foreach ($anuncios as $anuncio) {
+		echo "Cod: ".$anuncio['idanuncios']."<br/>";
+		echo "Titulo: ".$anuncio['tituloAnuncio']."<br/>";
+		echo "Quantidade: ".$anuncio['qtdAnuncio']."<br/>";
+		echo "Valor: ".$anuncio['vlrAnuncio']."<br/>";
+		echo "Descricao: ".$anuncio['descricaoAnuncio']."<br/>";
+		echo "Imagem: ".$anuncio['imagem']."<br/>";
+	} ?>
+</div>

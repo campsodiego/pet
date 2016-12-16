@@ -1,0 +1,98 @@
+.clear{
+	clear: both;
+}
+.header .navbar-custom{
+	background: #000;
+	border: none;
+	padding: 10px 0;
+	border-radius: none;
+}
+
+/*.navbar-default navbar-nav>.active>a{
+    color: #D4DF21 !important;
+    background-color: #696969 !important;
+}*/
+.header .navbar-custom .navbar-brand span{
+	color: #D4DF21;
+	font-weight: bold;
+}
+.header .navbar-collapse-custom a{
+	color: #353535;
+}
+.header-inferior h2{
+	border-bottom: 1px solid #D4DF21;
+	font-weight: bold;
+	margin-top: 0;
+}
+.header-inferior ul{
+	list-style-type: none;
+	margin: 35px 0 50px 0;
+}
+.header-inferior ul li{
+	padding-bottom: 20px;
+}
+.carousel-indicators .active{
+	background: #D4DF21;
+}
+
+.imagemBannerAdm
+{
+	width:50px;
+}
+
+.ulListaBanner
+{
+	display:flex;
+	list-style:none;	
+}
+
+
+.footer{
+	background: url('../images/pet-footer01.jpg');
+	padding: 30px 0;
+	color: red;
+
+}
+
+.footer p{
+	color: #FFF;
+}
+
+.imagemBannerAdm
+{
+	width:50px;
+}
+.footer .frm_form_fields label{
+	display: none !important;
+}
+.footer .frm_form_fields .form-field{
+	float: left;
+	width: 250px;
+}
+.footer .frm_form_fields .form-field input{
+	border: 1px solid #D4DF21;
+	background: transparent !important; 
+	border-radius: 0 !important;
+}
+.footer .frm_form_fields .frm_submit{
+	float: left;
+	width: 40px;
+	clear: none !important;
+}
+.footer .frm_form_fields .frm_submit input{
+	margin: 0 !important;
+	background: #D4DF21;
+	color: #9994ac;
+	text-transform: uppercase;
+	border-radius: 0 !important;
+	border: none !important;
+	box-shadow: none !important; 
+	padding: 5px;
+	height: 32px;
+}
+.footer .frm_form_fields .frm_submit input:hover{
+	background: #D4DF21;
+	color: #FFF;
+	border: solid 1px #D4DF21 !important;
+}
+
