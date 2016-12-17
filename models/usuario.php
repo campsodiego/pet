@@ -1,13 +1,15 @@
 <?php 
 	class usuario{
-		private $name;
+	public function getUsuarios($email,$senha){
+		$array = array();
 
-		public function setName($n){
-			$this->name = $n;
+		$sql = "SELECT * FROM usuario where email='".$email."' and senha='".$senha."' ";
+		$sql = $this->db->query($sql);
+
+		if($sql->rowCount() > 0){
+			return true;
 		}
 
-		public function getName(){
-			return $this->name;
-		}
+		return false;
 	}
 ?>

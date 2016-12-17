@@ -15,5 +15,21 @@ class controller{
 		extract($viewData);
 		include 'views/'.$viewName.'.php';
 	}
+
+	public function verifica_login()
+	{
+		if(!empty($_SESSION['logado']))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+
+			// redirecionar para pagina de login
+		}
+
+		
+	}
 }
 ?>

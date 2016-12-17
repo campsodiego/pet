@@ -3,6 +3,7 @@
  class bannerController extends controller{
 
 	public function lista_banner(){
+		$this->verifica_login();
 		$banner = new banner();
 		$dados['lista_banner'] = $banner->getBanners();
 		$this->loadTemplate('listaBanner',$dados);

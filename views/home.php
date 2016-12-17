@@ -9,25 +9,19 @@
 
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner" role="listbox">
-		  	<div class="item active">
-		    	<img src="<?php echo BASE_URL;  ?>/assets/images/img1.jpg" alt="...">
+			<?php
+			$contadorBanner=0;
+			foreach($banners as $banner){
+				$contadorBanner++;
+			 ?>
+		  	<div class="item <?php if($contadorBanner==1){ echo 'active'; }?>">
+		    	<img src="<?php echo BASE_URL;  ?>/assets/upload/<?php echo $banner['imagem']; ?>" alt="...">
 		    	<div class="carousel-caption">
 		        ...
 		    	</div>
 		  	</div>
-		  	<div class="item">
-		    	<img src="<?php echo BASE_URL;  ?>/assets/images/img2.jpg" alt="...">
-		    	<div class="carousel-caption">
-		        	...
-		    	</div>
-			</div>
-			<div class="item">
-		    	<img src="<?php echo BASE_URL;  ?>/assets/images/img3.jpeg" alt="...">
-		    	<div class="carousel-caption">
-		        	...
-		    	</div>
-			</div>
-	  		...
+		  	<?php } ?>
+
 		</div>
 
 		<!-- Controls -->
@@ -53,27 +47,5 @@
 		echo "Imagem: ".$anuncio['imagem']."<br/>";
 	} ?>
 </div>
-<div class="col-md-4 col-lg-4">
-	<h1>Home</h1>
 
-	<?php foreach ($anuncios as $anuncio) {
-		echo "Cod: ".$anuncio['idanuncios']."<br/>";
-		echo "Titulo: ".$anuncio['tituloAnuncio']."<br/>";
-		echo "Quantidade: ".$anuncio['qtdAnuncio']."<br/>";
-		echo "Valor: ".$anuncio['vlrAnuncio']."<br/>";
-		echo "Descricao: ".$anuncio['descricaoAnuncio']."<br/>";
-		echo "Imagem: ".$anuncio['imagem']."<br/>";
-	} ?>
-</div>
-<div class="col-md-4 col-lg-4">
-	<h1>Home</h1>
-
-	<?php foreach ($anuncios as $anuncio) {
-		echo "Cod: ".$anuncio['idanuncios']."<br/>";
-		echo "Titulo: ".$anuncio['tituloAnuncio']."<br/>";
-		echo "Quantidade: ".$anuncio['qtdAnuncio']."<br/>";
-		echo "Valor: ".$anuncio['vlrAnuncio']."<br/>";
-		echo "Descricao: ".$anuncio['descricaoAnuncio']."<br/>";
-		echo "Imagem: ".$anuncio['imagem']."<br/>";
-	} ?>
 </div>

@@ -6,7 +6,11 @@ class homeController extends controller{
 		$anuncios = new anuncios();
 		$dados['anuncios'] = $anuncios->getAnuncios();
 
+		$banner = new banner();
+		$dados['banners'] = $banner->getBanners();
+
 		$this->loadTemplate('home', $dados);
+
 	}
 
 	public function sobre(){
