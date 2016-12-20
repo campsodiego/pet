@@ -15,13 +15,13 @@
 		<tbody>
 			<?php  foreach ($lista_avaliacao as $avaliacao) {
 			echo "<tr>";
-					echo " <td>".$avaliacao['an.titulo']."</td>";
-					echo " <td><img src='".BASE_URL."/assets/upload/".$avaliacao['an.imagem']."' class='imagemAnuncio' /></td>";
-					echo " <td>".$avaliacao['us.usuario']."</td>";
-					echo " <td>".$avaliacao['av.dtaAvaliacao']."</td>";
-					echo " <td>".$avaliacao['av.vlrAvaliacao']."</td>";
-					echo " <td>".$avaliacao['av.comentarioAva']."</td>";
-					echo " <td><a href='".BASE_URL."/anuncios/deletar_anuncio/".$avaliacao['idanuncios']."' class='btn btn-primary' role='button'>Excluir </a></td>";
+				echo " <td>".$avaliacao['an.titulo']."</td>";
+				echo " <td><img src='".BASE_URL."/assets/upload/".$avaliacao['an.imagem']."' class='imagemAnuncio' /></td>";
+				echo " <td>".$avaliacao['us.usuario']."</td>";
+				echo " <td>".$avaliacao['av.dtaAvaliacao']."</td>";
+				echo " <td>".$avaliacao['av.vlrAvaliacao']."</td>";
+				echo " <td>".$avaliacao['av.comentarioAva']."</td>";
+				echo " <td><a href='".BASE_URL."/anuncios/deletar_anuncio/".$avaliacao['idanuncios']."' class='btn btn-primary' role='button'>Excluir </a></td>";
 			echo "</tr>";
 			} ?>
 		</tbody>
