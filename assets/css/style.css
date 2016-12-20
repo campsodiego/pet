@@ -10,6 +10,14 @@
 #titulo-anuncio{
 	text-align: center;
 }
+#login{
+	float: right;
+	padding-top: 18px;
+	color: #D4DF21;
+}
+#login a{
+	text-decoration: none;
+}
 /*.navbar-default navbar-nav>.active>a{
     color: #D4DF21 !important;
     background-color: #696969 !important;
@@ -36,10 +44,6 @@
 .carousel-indicators .active{
 	background: #D4DF21;
 }
-.imagemBannerAdm
-{
-	width:50px;
-}
 
 .ulListaBanner
 {
@@ -61,7 +65,10 @@
 
 .imagemBannerAdm
 {
-	width:50px;
+	width:150px;
+}
+.imagemAnuncio{
+	width: 100px;
 }
 .footer .frm_form_fields label{
 	display: none !important;
@@ -97,5 +104,18 @@
 	border: solid 1px #D4DF21 !important;
 }
 #envia{
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 28px;
+}
+.container-custom .box-custom{
+	padding-bottom: 20px;
+}
+.container-custom .box-custom a{
+	color: #000;
+	background-color: #D4DF21;
+	border-color: none;
+}
+.col-md-4 .col-lg-4 .lg-custom a{
 	float: right;
 }

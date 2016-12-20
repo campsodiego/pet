@@ -13,10 +13,14 @@
 				$_SESSION['logado']=true;
 				$_SESSION['email']=$dados['email'];
 				// talvez fazer um outro sql no model e chamar aqui para pegar o nome
+				echo "está funcionando";
+				header('Location:'.BASE_URL);
+				exit();
 			}
 			else
 			{
 				// Lembrar de redirecionar o usuario com a mensagem de erro
+				echo "não está funcionando";
 			}
 		}
 

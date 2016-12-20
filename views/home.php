@@ -35,19 +35,19 @@
 		</a>
 	</div>
 </section>
-<h1 id="titulo-anuncio">Destaques Anuncios</h1>
-<?php foreach ($anuncios as $anuncio) { ?>
-<div class="col-md-4 col-lg-4">
-	<h1>Home</h1>
-		<?php 
-		echo "Cod: ".$anuncio['idanuncios']."<br/>";
-		echo "Titulo: ".$anuncio['tituloAnuncio']."<br/>";
-		echo "Quantidade: ".$anuncio['qtdAnuncio']."<br/>";
-		echo "Valor: ".$anuncio['vlrAnuncio']."<br/>";
-		echo "Descricao: ".$anuncio['descricaoAnuncio']."<br/>";
-		echo "Imagem: ".$anuncio['imagem']."<br/>";
-		?>
-</div>
-<?php } ?>
-
-</div>
+<section class="conteudo">
+	<h1 id="titulo-anuncio">Destaques</h1>
+	<?php foreach ($anuncios as $anuncio) { ?>
+	<div class="col-md-4 col-lg-4">
+		<div class="box-custom">
+			<?php 
+			echo "<h1>".$anuncio['tituloAnuncio']."</h1><br/>";
+			echo "<img src='".BASE_URL."/assets/upload/".$anuncio['imagem']."' class='imagemBannerAdm' /><br/>";
+			echo "R$ ".$anuncio['vlrAnuncio'].",00<br/>";
+			echo "Descricao: ".$anuncio['descricaoreduzida']."<br/><br/>";
+			echo "<a href='".BASE_URL."/avaliacao/lista_avaliacao/".$anuncio['idanuncios']."' class='btn btn-primary' role='button'>Ver Avaliações</a>";
+			?>
+		</div>
+	</div>
+	<?php } ?>
+</section>

@@ -63,7 +63,7 @@ class usuarioController extends controller{
 
 	public function efetuarLogin(){
 		$dados=$_POST;
-		$usuario = new $usuario();
+		$usuario = new usuario();
 		$verificaLogin=$usuario->getUsuarios($dados['email'],$dados['senha']);
 		if($verificaLogin==true)
 		{

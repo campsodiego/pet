@@ -2,17 +2,15 @@
 <form action="<?php BASE_URL; ?>/pet/banner/salva_edita_banner" method="post" enctype="multipart/form-data">
 <input type="hidden" name="idbanner"  value="<?php echo $banner[0]['idbanner']; ?>" />
 <input type="hidden" name="imagemAnterior"  value="<?php echo $banner[0]['imagem']; ?>" />
-	<div>
-
+	<div class="input-group">
 		<label>Link</label>
-
-		<input type="text" name="link"  value="<?php echo $banner[0]['link']; ?>" />
+		<input type="text" class="form-control" name="link"  value="<?php echo $banner[0]['link']; ?>" />
 	</div>
-	<div>
+	<div class="input-group">
 		<label>Imagem</label>
-		<input type="file" name="imagem" />
+		<input type="file" class="form-control" name="imagem" />
 	</div>
-	<div class="submit">	
-		<input type="submit"/>
+	<div id="envia">	
+		<input class="btn btn-success" type="submit"/>
 	</div>
 </form>

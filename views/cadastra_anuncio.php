@@ -19,7 +19,7 @@
 		<label>Imagem</label>
 		<input type="file" class="form-control" name="imagem">
 	</div>
-	<div class="submit">	
+	<div id="envia">	
 		<input class="btn btn-success" type="submit"/>
 	</div>
 </form>

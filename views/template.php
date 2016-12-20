@@ -26,8 +26,8 @@
 		      <ul class="nav navbar-nav">
 		        <li class="active"><a href="<?php echo BASE_URL;  ?>/anuncios/lista_anuncio">Anuncios <span class="sr-only">(current)</span></a></li>
 		        <li><a href="<?php echo BASE_URL;  ?>/banner/lista_banner">Banners</a></li>
-		        <li><a href="<?php echo BASE_URL;  ?>/usuario/lista_usuario">Usuarios</a></li>
 		      </ul>
+		      <a href="<?php echo BASE_URL;  ?>/login/login" id="login"><span class="glyphicon glyphicon-user"></span></a>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container -->
 		</nav>

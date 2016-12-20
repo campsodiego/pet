@@ -1,5 +1,5 @@
 <?php 
-	class usuario{
+	class usuario extends model{
 	public function getUsuarios($email, $senha){
 		$array = array();
 
@@ -41,5 +41,5 @@
 		$sql =" UPDATE usuario set nome='".$usuario['nome']."',  email='".$usuario['email']."',  senha='".$usuario['senha']."' where idusuario='".$usuario['idusuario']."' ";
 		$sql = $this->db->query($sql);
 	}
-
+}
 ?>
