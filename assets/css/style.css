@@ -7,7 +7,9 @@
 	padding: 10px 0;
 	border-radius: none;
 }
-
+#titulo-anuncio{
+	text-align: center;
+}
 /*.navbar-default navbar-nav>.active>a{
     color: #D4DF21 !important;
     background-color: #696969 !important;
@@ -34,7 +36,6 @@
 .carousel-indicators .active{
 	background: #D4DF21;
 }
-
 .imagemBannerAdm
 {
 	width:50px;
@@ -48,10 +49,10 @@
 
 
 .footer{
-	background: url('../images/pet-footer01.jpg');
+	background: url('../images/pet-footer01.jpg') center top;
 	padding: 30px 0;
-	color: red;
-
+	color: #FFFFFF;
+	text-align: center;
 }
 
 .footer p{
@@ -95,4 +96,6 @@
 	color: #FFF;
 	border: solid 1px #D4DF21 !important;
 }
-
+#envia{
+	float: right;
+}

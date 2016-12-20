@@ -1,6 +1,62 @@
 <?php 
-class anunciosController extends controller{
+class usuarioController extends controller{
 	
+	public function lista_usuario(){
+		$this->verifica_login();
+		$usuario = new usuario();
+		$dados['lista_usuario'] = $usuario->getUsuarios();
+		$this->loadTemplate('lista_usuario',$dados);
+	}
+
+	public function cadastra_usuario()
+	{
+		$this->loadTemplate('cadastra_usuario');
+	}
+
+	public function salva_usuario()
+	{
+		$dados=$_POST;
+		$usuario = new usuario();
+		$usuario->salvaUsuario($dados);
+		header('Location:'.BASE_URL.'/usuario/lista_usuario/');
+		exit();
+	}
+
+	public function editar_usuario($id){
+		$usuario = new usuario();
+		$dados['usuario'] = $usuario->getUnicoUsuario($id);
+		$this->loadTemplate('editar_usuario',$dados);
+	}
+
+	public function deletar_usuario($id){
+		$usuario = new usuario();
+		$dados['usuario'] = $usuario->deletar_usuario($id);
+		header('Location:'.BASE_URL.'/usuario/lista_usuario/');
+		exit();
+	}
+
+	public function salva_edita_usuario()
+	{
+		$dados=$_POST;
+		if(!empty($_FILES['imagem']['name'])) {
+
+			$nomeImagem=date("Y.m.d-H.i.s").strtolower($_FILES['imagem']['name']);
+			$uploaddir = $_SERVER['DOCUMENT_ROOT'] .'/pet/assets/upload/';
+			$uploadfile = $uploaddir.$nomeImagem;	
+			move_uploaded_file($_FILES['imagem']['tmp_name'], $uploadfile);
+			$dados['imagem']=$nomeImagem;
+		}
+		else
+		{
+			$dados['imagem']=$dados['imagemAnterior'];	
+		}
+			
+		$usuario = new usuario();
+		$usuario->salvaEditaUsuario($dados);
+		header('Location:'.BASE_URL.'/usuario/lista_usuario/');
+		exit();
+	}
+
 	public function login(){
 		$this->loadTemplate('login',$dados);
 	}
@@ -25,6 +81,5 @@ class anunciosController extends controller{
 	{
 		session_destroy();
 	}
-
-
+}
 ?>

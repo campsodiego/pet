@@ -20,12 +20,13 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="#">Pet<span>SHOP</span></a>
+		      <a class="navbar-brand" href="<?php echo BASE_URL;  ?>">Pet<span>SHOP</span></a>
 		    </div>
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
-		        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-		        <li><a href="#">Link</a></li>
+		        <li class="active"><a href="<?php echo BASE_URL;  ?>/anuncios/lista_anuncio">Anuncios <span class="sr-only">(current)</span></a></li>
+		        <li><a href="<?php echo BASE_URL;  ?>/banner/lista_banner">Banners</a></li>
+		        <li><a href="<?php echo BASE_URL;  ?>/usuario/lista_usuario">Usuarios</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container -->
@@ -33,7 +34,7 @@
 	</section>
 
 	<section class="body">
-		<div class="container">
+		<div class="container container-custom">
 			<div class="row">
 					
 				<div class="col-md-12" id="body">
@@ -44,7 +45,10 @@
 	</section>
 	
 	<div class="footer">
-		footer
+		<div class="container">
+			Desenvolvido por Diego Rodrigues Campos 
+			<br/><br/><br/><br/><br/><br/>
+		</div>
 	</div>
 
 

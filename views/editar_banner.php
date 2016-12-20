@@ -12,7 +12,7 @@
 		<label>Imagem</label>
 		<input type="file" name="imagem" />
 	</div>
-	<div>	
+	<div class="submit">	
 		<input type="submit"/>
 	</div>
 </form>
