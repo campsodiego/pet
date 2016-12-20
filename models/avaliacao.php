@@ -7,7 +7,6 @@
 
 			$sql = "SELECT an.titulo, an.imagem, us.usuario, av.dtaAvaliacao, av.vlrAvaliacao, av.comentarioAva FROM avaliacao as av INNER JOIN anuncios as an ON av.anuncios_idanuncios = an.idanuncios INNER JOIN usuario as us ON av.usuario_idusuario = us.idusuario";
 			$sql = $this->db->query($sql);
-
 			if($sql->rowCount() > 0){
 				$array = $sql->fetchAll();
 			}
