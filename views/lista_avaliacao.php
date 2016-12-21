@@ -9,15 +9,12 @@
 
 			<div class="input-group">
 				<label>Valor</label>
-				<input type="hidden" class="form-control" name="vlrAvaliacao" id="vlrAvaliacao" /><br/>
 				<section class="rating">
-					<div class="btn-group" role="group" aria-label="...">
-					  <buton type="button" class="btn btn-default" value="1" onclick="adicionaValor1()"><span class="glyphicon glyphicon-star"></span></buton>
-					  <buton type="button" class="btn btn-default" value="2" onclick="adicionaValor2()"><span class="glyphicon glyphicon-star"></span></buton>
-					  <buton type="button" class="btn btn-default" value="3" onclick="adicionaValor3()"><span class="glyphicon glyphicon-star"></span></buton>
-					  <buton type="button" class="btn btn-default" value="4" onclick="adicionaValor4()"><span class="glyphicon glyphicon-star"></span></buton>
-					  <buton type="button" class="btn btn-default" value="5" onclick="adicionaValor5()"><span class="glyphicon glyphicon-star"></span></buton>
-					</div>
+					<label class="checkbox-inline"><input type="checkbox" value="1" name="vlrAvaliacao"><span class="glyphicon glyphicon-star"></span></label>
+					<label class="checkbox-inline"><input type="checkbox" value="2" name="vlrAvaliacao"><span class="glyphicon glyphicon-star"></span></label>
+					<label class="checkbox-inline"><input type="checkbox" value="3" name="vlrAvaliacao"><span class="glyphicon glyphicon-star"></span></label>
+					<label class="checkbox-inline"><input type="checkbox" value="4" name="vlrAvaliacao"><span class="glyphicon glyphicon-star"></span></label>
+					<label class="checkbox-inline"><input type="checkbox" value="5" name="vlrAvaliacao"><span class="glyphicon glyphicon-star"></span></label>
 				</section>
 			</div>
 			<div class="input-group">
