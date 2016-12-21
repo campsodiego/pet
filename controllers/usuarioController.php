@@ -18,7 +18,7 @@ class usuarioController extends controller{
 		$dados=$_POST;
 		$usuario = new usuario();
 		$usuario->salvaUsuario($dados);
-		header('Location:'.BASE_URL.'/usuario/lista_usuario/');
+		header('Location:'.BASE_URL.'/login/login/');
 		exit();
 	}
 
@@ -70,6 +70,9 @@ class usuarioController extends controller{
 			$_SESSION['logado']=true;
 			$_SESSION['email']=$dados['email'];
 			// talvez fazer um outro sql no model e chamar aqui para pegar o nome
+			echo"<script language='javascript' type='text/javascript'>alert('logou');window.location.href='".BASE_URL."';</script>";
+			header('Location:'.BASE_URL);
+			exit();
 		}
 		else
 		{

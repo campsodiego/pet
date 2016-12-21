@@ -11,7 +11,7 @@
 		<label>Senha</label>
 		<input type="password" class="form-control" name="senha" />
 	</div>
-	<div>	
+	<div id="envia">	
 		<input class="btn btn-success" type="submit"/>
 	</div>
 </form>

@@ -119,3 +119,11 @@
 .col-md-4 .col-lg-4 .lg-custom a{
 	float: right;
 }
+.body .rating a{
+	color: #000;
+	text-decoration: none;
+}
+.body .rating .btn-default:hover{
+	color: #D4DF21;
+
+}
